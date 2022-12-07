@@ -53,6 +53,7 @@
 
 .card:hover > .models {
   opacity: 1;
+  transform: scaleY(1);
 }
 
 .brand {
@@ -69,8 +70,10 @@
   padding: 0.5rem;
   border-radius: 0.5rem;
   opacity: 0;
+  transform-origin: top;
+  transform: scaleY(0);
   background-color: rgb(125, 246, 255);
-  transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms 100ms ease-in-out;
 }
 
 .model {
