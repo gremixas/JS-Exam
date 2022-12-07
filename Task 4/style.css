@@ -27,3 +27,59 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  max-width: 80%;
+  padding-top: 2rem;
+  position: relative;
+}
+
+.card {
+  width: 200px;
+  height: 100px;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+  background-color: rgb(125, 246, 255);
+  z-index: 123;
+  cursor: pointer;
+}
+
+.card:hover > .models {
+  opacity: 1;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.models {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  opacity: 0;
+  background-color: rgb(125, 246, 255);
+  transition: opacity 300ms ease-in-out;
+}
+
+.model {
+  color: #999;
+  text-align: center;
+}
+
+.model:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
