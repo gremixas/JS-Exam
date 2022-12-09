@@ -12,7 +12,7 @@ būti stilizuota su CSS ir būti responsive;
 // O parsisiuntus projekta i PC jo neatidaro del CORS ...
 // import cars from './cars.json' assert {type: 'json'}
 
-const ENDPOINT = 'cars.json';
+const ENDPOINT = './cars.json';
 const output = document.querySelector('#output');
 
 async function readJsonFile(file) {
