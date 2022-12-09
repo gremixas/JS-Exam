@@ -15,9 +15,9 @@ const ENDPOINT = 'https://api.github.com/users';
 const btn = document.querySelector('#btn');
 const output = document.querySelector('#output');
 
-async function getData() {
+async function getData(url) {
     try {
-        const response = await fetch(ENDPOINT);
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             btn.addEventListener('click', () => showUsers(data));
@@ -38,4 +38,4 @@ function showUsers(data) {
     });
 }
 
-(() => getData())();
+(() => getData(ENDPOINT))();

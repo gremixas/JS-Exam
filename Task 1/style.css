@@ -64,8 +64,8 @@ form {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  font-size: 2rem;
   text-align: left;
+  font-size: 1.1em;
 }
 
 #weight + #weight {
@@ -85,7 +85,8 @@ form {
   }
 
   #search,
-  #submit-btn {
+  #submit-btn,
+  #weight {
     font-size: 2em;
   }
 }
